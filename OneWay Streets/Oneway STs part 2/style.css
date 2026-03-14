@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+/* Quiz Card */
+#quiz-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* Question text */
+#question {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Progress */
+#progress {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Answer options */
+#answers-form label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#answers-form input {
+    transform: scale(1.2);
+}
+
+/* Correct & Wrong styling */
+.correct-option {
+    background: #e6f9ec;
+    border: 2px solid #28a745;
+}
+
+.wrong-option {
+    background: #fde8e8;
+    border: 2px solid #dc3545;
+}
+
+#feedback {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.correct {
+    color: #28a745;
+}
+
+.wrong {
+    color: #dc3545;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Finish screen */
+.review-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    font-size: 14px;
+}
+
+/* Mobile improvements */
+@media (max-width: 480px) {
+    #quiz-container {
+        padding: 15px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    #question {
+        font-size: 17px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
